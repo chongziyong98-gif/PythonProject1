@@ -6,6 +6,7 @@ def cal(initial,oprt_cal,*args,**kwargs):
     for item in items:
         if type(item) in (int,float):
             result = oprt_cal(result,item)
+
     return result
 
 def add(a,b):
