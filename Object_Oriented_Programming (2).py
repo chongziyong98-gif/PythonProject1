@@ -35,6 +35,8 @@ print(f'perimeter: {t.perimeter}')
 print(f'area: {t.area}')
 
 #inherit
+#Student and Teacher is Person, so we can classify the common characteristic from them.
+#use super(). to inherit
 
 class Person:
 
@@ -52,7 +54,7 @@ class Person:
 class Student(Person):
 
     def __init__(self, name, age):
-        super().__init__(name, age)
+        super().__init__(name, age) #super().__init__(args same as Person), so that no need to self.name=name again
 
     def study(self, course_name):
         print(f'{self.name} is learning {course_name}.')
